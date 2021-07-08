@@ -1,33 +1,40 @@
-<!DOCTYPE HTML>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <title>Coding Quiz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href=".\assets\style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+
+    
+    <title>Assignment 4 - Javascript Code Quiz</title>
 </head>
-<header class="header">Homework 4 - Coding Quiz</header>
-<button type="button" class="start-btn">Start Quiz!</button>
+
 <body>
-    <body>
-        <div class="quizContainer container-fluid well well-lg">
-            <div id="quiz1" class="text-center">
-                <h4><span id="iTimeShow" class="timer">Time Remaining: </span><br/><span id='timer'></span></h4>
-            </div>
-            
-            <div class="question"></div>
-            <ul class="choiceList"></ul>
-            <div class="quizMessage"></div>
-            <div class="result"></div>
-            <button class="preButton">Previous Question</button>
-            <button class="nextButton">Next Question</button>
+    <!-- Link to highscores -->
+    <a href="./assets/HighScores.html">View Highscores</a>
+    <!-- This is a wrapper -->
+    <div id="wrapper">
+        <!-- Div for timer -->
+        <div id="currentTime"></div>
+        <!-- Div for quiz -->
+        <div id="questionsDiv">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers
+                will penalize your score/time by ten seconds!</p>
+            <ul id="choicesUl"></ul>
+            <!-- Buttons -->
+            <button id="startTime">Start Quiz</button>
         </div>
+
+    </div>
+
+
+    <script src="./assets/script.js"></script>
+
+
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script charset="utf-8" src=".\assets\script.js"></script>
-
-<footer class="footer">Made with HTML, CSS, and JavaScript. 2021.</footer>
 </html>
